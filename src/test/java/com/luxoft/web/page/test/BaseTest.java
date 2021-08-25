@@ -1,6 +1,7 @@
 package com.luxoft.web.page.test;
 
 import com.luxoft.web.page.settings.SetUp;
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

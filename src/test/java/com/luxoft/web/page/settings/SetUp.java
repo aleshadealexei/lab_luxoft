@@ -19,12 +19,11 @@ public class SetUp {
     public SetUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
-        // для того, шоб хром не был виден
         //options.setHeadless(true);
         System.setProperty("webdriver.chrome.driver","lib/chromedriver.exe");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, 2);
+        wait = new WebDriverWait(driver, 5);
         driver.get(baseUrl);
     }
 
